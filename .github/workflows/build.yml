@@ -34,4 +34,7 @@ jobs:
             --packages-url https://tales-pw.github.io/PyPI/packages/ \
             --output-dir .
 
-      - run: git push
+      - name: Update github pages
+        run: |
+          git commit -m "rebuild index"
+          git push
