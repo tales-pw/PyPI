@@ -29,6 +29,7 @@ jobs:
 
       - name: Build PyPI
         run: |
+          find . -name "*.whl" -printf "%f\n" > ./packages/packages.txt
           dumb-pypi \
             --package-list ./packages/packages.txt \
             --packages-url https://tales-pw.github.io/PyPI/packages/ \
