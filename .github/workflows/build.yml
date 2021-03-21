@@ -36,5 +36,8 @@ jobs:
 
       - name: Update github pages
         run: |
+          git add --all
+          git config --local user.email "pypi@tales.pw"
+          git config --local user.name "pypi"
           git commit -m "rebuild index"
           git push
