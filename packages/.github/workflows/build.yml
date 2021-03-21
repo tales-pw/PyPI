@@ -15,7 +15,11 @@ jobs:
         with:
           ref: "pages"
 
-      - run: rm -rf packages
+      - name: Cleanup old build
+        run: |
+          mv .git ../.git
+          rm -rf *
+          mv ../.git .git
 
       - uses: actions/checkout@v2
         with:
