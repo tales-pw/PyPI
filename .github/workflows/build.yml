@@ -10,12 +10,22 @@ jobs:
     steps:
       - uses: actions/setup-python@v2
         with:
-          python-version: '3'
+          python-version: "3"
       - uses: actions/checkout@v2
         with:
           ref: "master"
-          path: 'packages'
+          path: "packages"
       - uses: actions/checkout@v2
         with:
           ref: "pages"
-          path: 'pages'
+          path: "pages"
+
+      - name: Install dumb-pypi
+        run: python3 -m pip install dumb-pypi
+
+      - name: Build PyPI
+        run: |
+          dumb-pypi \
+            --package-list ./packages/packages.txt \
+            --packages-url https://tales-pw.github.io/PyPI/packages/ \
+            --output-dir ./pages
