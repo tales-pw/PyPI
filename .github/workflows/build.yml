@@ -13,12 +13,16 @@ jobs:
           python-version: "3"
       - uses: actions/checkout@v2
         with:
-          ref: "master"
-          path: "packages"
+          ref: "pages"
+
+      - run: rm -rf packages
+
       - uses: actions/checkout@v2
         with:
-          ref: "pages"
-          path: "pages"
+          ref: "master"
+          path: "packages"
+
+      - run: rm packages/.git
 
       - name: Install dumb-pypi
         run: python3 -m pip install dumb-pypi
@@ -28,4 +32,6 @@ jobs:
           dumb-pypi \
             --package-list ./packages/packages.txt \
             --packages-url https://tales-pw.github.io/PyPI/packages/ \
-            --output-dir ./pages
+            --output-dir .
+
+      - run: git push
