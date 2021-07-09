@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>My Private PyPI</title>
+        <title>Changelog | My Private PyPI</title>
         <style>
             /* http://meyerweb.com/eric/tools/css/reset/
                v2.0 | 20110126
@@ -121,44 +121,44 @@
             }
         </style>
         
-        <style>
-            .searchbox {
-                display: table-cell;
-                padding-left: 15px;
-                vertical-align: middle;
-            }
+    <style>
+        .changelog {
+            border-collapse: collapse;
+        }
 
-            .searchbox input {
-                width: 100%;
-                margin: 0;
-                padding: 4px;
-                font-size: 16px;
-                box-sizing: border-box;
-                border: none;
-                line-height: 16px;
-            }
+        .changelog th, .changelog td {
+            border: solid 1px #333;
+            padding: 5px;
+            text-align: left;
+        }
 
-            .package {
-                display: block;
-                font-size: 14px;
-                padding: 10px;
-                color: #111;
-                text-decoration: none;
-            }
+        .changelog th {
+            font-weight: bold;
+            background-color: #e7e7e7;
+        }
 
-            .package:hover {
-                background-color: #ebf1ff !important;
-                color: #333;
-            }
+        .changelog a {
+            color: black;
+        }
 
-            .package.odd {
-                background-color: #fefefe;
-            }
+        .pagination {
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #ddd;
+        }
 
-            .package.even {
-                background-color: #f8f8f8;
-            }
-        </style>
+        .pagination a {
+            color: black;
+            text-decoration: none;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .pagination a[href] {
+            background-color: #efefef;
+        }
+    </style>
 
     </head>
 
@@ -172,57 +172,88 @@
                         </div>
 
                         
-    <div class="searchbox">
-        <input id="search" type="text" autofocus placeholder="Filter" value="" />
-    </div>
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="container width">
             
-    <div class="packages width" id="packages">
-        
-            <a class="package odd" href="simple/cofdsystem/" data-name="cofdsystem">
-                <strong>cofdsystem</strong> (latest version: 2.3.0)
-            </a>
-        
-    </div>
+    <h2>Package Changelog</h2>
+    
+    <p class="pagination">
+        <a >&laquo;</a>
+        <a >&larr;</a>
+        Page 1/1
+        <a >&rarr;</a>
+        <a >&raquo;</a>
+    </p>
 
-    <script>
-        (function() {
-            function normalize(str) {
-                return str.toLowerCase().replace(/[._-]+/g, '-');
-            }
-            function filter() {
-                var words = normalize(search.value).trim().split();
-                var rows = document.getElementsByClassName('package');
-                var odd = true;
-                for (var i = 0; i < rows.length; i++) {
-                    var row = rows[i];
-                    var name = row.dataset.name;
-                    var ok = true;
-                    for (var j = 0; j < words.length; j++) {
-                        if (!normalize(name).includes(words[j])) {
-                            ok = false;
-                            break;
-                        }
-                    }
-                    if (ok) {
-                        row.style.backgroundColor = odd ? '#fefefe' : '#f8f8f8';
-                        odd = !odd;
-                    }
-                    row.style.display = ok ? 'block' : 'none';
-                }
-            }
+    <table class="changelog">
+        <tr>
+            <th>Filename</th>
+            <th>Upload Time</th>
+            <th>Uploaded By</th>
+        </tr>
 
-            var search = document.getElementById('search');
-            search.oninput = filter;
-            search.onpaste = filter;
-            search.onpropertychange = filter;
-        })();
-    </script>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-2.3.0a1-py3-none-any.whl">CofDSystem-2.3.0a1-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-2.3.0-py3-none-any.whl">CofDSystem-2.3.0-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-2.2.0-py3-none-any.whl">CofDSystem-2.2.0-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-2.1.0-py3-none-any.whl">CofDSystem-2.1.0-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-2.0.0-py3-none-any.whl">CofDSystem-2.0.0-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://tales-pw.github.io/PyPI/packages/CofDSystem-1.0.0-py3-none-any.whl">CofDSystem-1.0.0-py3-none-any.whl</a></td>
+                <td class="nowrap">
+                    
+                </td>
+                <td class="nowrap">None</td>
+            </tr>
+        
+    </table>
+    
+    <p class="pagination">
+        <a >&laquo;</a>
+        <a >&larr;</a>
+        Page 1/1
+        <a >&rarr;</a>
+        <a >&raquo;</a>
+    </p>
+
 
         </div>
     </body>
