@@ -17,6 +17,7 @@ CofDSystem-2.4.0a7-py3-none-any.whl
 CofDSystem-2.4.0a1-py3-none-any.whl
 CofDSystem-3.1.0a4-py3-none-any.whl
 CofDSystem-3.1.0a2-py3-none-any.whl
+CofDSystem-3.2.0a12-py3-none-any.whl
 CofDSystem-3.2.0a3-py3-none-any.whl
 CofDSystem-2.4.0a5-py3-none-any.whl
 CofDSystem-3.2.0a4-py3-none-any.whl
