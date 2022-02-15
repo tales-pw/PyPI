@@ -40,6 +40,7 @@ CofDSystem-5.0.0a4-py3-none-any.whl
 CofDSystem-5.0.1a2-py3-none-any.whl
 CofDSystem-3.2.0a6-py3-none-any.whl
 CofDSystem-3.3.0a4-py3-none-any.whl
+CofDSystem-5.2.0-py3-none-any.whl
 CofDSystem-3.2.0a5-py3-none-any.whl
 CofDSystem-3.2.2a2-py3-none-any.whl
 CofDSystem-3.2.0a11-py3-none-any.whl
